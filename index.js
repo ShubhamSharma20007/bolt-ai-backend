@@ -14,7 +14,7 @@ connectDB();
 
 
 app.use(cors({
-    origin: [process.env.CLIENT_URL, 'bolt-ai-clone.netlify.app'],
+    origin: [process.env.CLIENT_URL, 'https://bolt-ai-clone.netlify.app'],
     methods: ['GET', 'POST', 'PUT', 'DELETE'],
     credentials: true,
 }));
