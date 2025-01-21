@@ -131,10 +131,8 @@ const findWorkUserWise = async (req, res) => {
 
 const validatePrompt = async (req, res) => {
     let { prompt } = req.query;
-    prompt = prompt.replace(/ /g, "")
     const AIMessage = `
     Analyze the following prompt and determine if it contains invalidating factors. Respond with "true" if the prompt contains ANY invalidating factors, or "false" if it does not.
-
     Invalidating factors include:
     1. Abusive, offensive, or unethical content
     2. Technically infeasible or impossible requests
